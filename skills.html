@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Skill of Anurag</title>
+</head>
+<body style="background-color: rgb(68, 66, 71);">
+    <header>
+        <nav>
+            <div class="icon">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="navigation">
+            <a href="index.html"><div class="left" style="color: #fff; font-weight: 700; text-decoration: underline;"><b>Anurag kashyap</b></div></a>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./aboutme.html">About Me</a></li>
+                    <li><a href="./skills.html">Skill</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <div class="skills">
+        <div class="part1">
+            <div class="javascript">
+                <a href="">
+                <img src="./assist/JavaScript-Emblem.png" class="js"></a>
+                <p style="color: #fff;">JavaScript</p>
+            </div>
+            <div class="cascading">
+                <a href="">
+                <img src="./assist/8fb97dec724d750d2085173816712ffc.png" class="css"></a>
+                <p style="color: #fff;">CSS</p>
+            </div>
+            <div class="hypertext">
+                <a href="">
+                <img src="./assist/logo-html-5-1024.png" class="html"></a>
+                <p style="color: #fff;">HTML</p>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="bootstrap">
+                <a href="">
+                <img src="./assist/bootstrap-logo.png" class="boot"></a>
+                <p style="color: #fff;">BootStrap</p>
+            </div>
+            <div class="tailwind">
+                <a href="">
+                <img src="./assist/tailwind-css.png" class="tailwind"></a>
+                <p style="color: #fff;">Tailwind CSS</p>
+            </div>
+            <div class="github">
+                <a href="">
+                <img src="./assist/github_PNG68.png" class="git"></a>
+                <p style="color: #fff;">Github</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         let open = document.querySelector(".fa-bars");
+        let close = document.querySelector(".fa-xmark");
+        let nav = document.querySelector(".navigation");
+
+        open.addEventListener("click", function(){
+            nav.style.marginLeft = "0px";
+            setTimeout(function(){
+                close.style.display = "block";
+            },10)
+            open.style.display = "none";
+        })
+
+        close.addEventListener("click", function(){
+            nav.style.marginLeft = "-220px";
+            setTimeout(function(){
+                open.style.display = "block";
+            },10)
+            close.style.display = "none";
+        })
+    </script>
+</body>
+</html>
