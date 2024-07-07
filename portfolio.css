@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgb(68, 66, 71); */
+    background-color: rgb(68, 66, 71);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav .navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(34, 34, 37);
+    /* position: fixed; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav ul li a:hover {
+    color: rgb(85, 156, 162);
+    font-size: 18px;
+}
+
+nav .icon .fa-bars{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* z-index: 5; */
+    color: #fff;
+    /* position: absolute; */
+    /* margin-top: 1rem; */
+}
+
+nav .icon .fa-xmark{
+    margin-left: 10rem;
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    /* margin-top: 1rem; */
+}
+
+@media(max-width:900px){
+    nav{
+        height: 60px;
+        background-color: rgb(34, 34, 37);
+    }
+    nav .navigation{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: rgb(34, 34, 37);
+        height: 100vh;
+        width: 220px;
+        margin-left: -220px;
+        transition: all ease-in-out 0.5s;
+        margin-top: 2rem;
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        
+    }
+
+    nav .left b{
+        text-decoration: underline grey;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        /* justify-content: center; */
+        text-align: center;
+    }
+
+    nav ul li{
+        margin: 1rem;
+        box-sizing: border-box;
+    }
+    nav .icon .fa-bars{
+        display: block;
+        margin: 1rem;
+        margin-top: 0;
+    }
+
+    main .firstsection{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:900px){
+    nav .icon .fa-bars{
+        display: none;
+    }
+}
+
+.left {
+    font-size: 23px;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 35px;
+}
+
+.firstsection .leftsection .logo{
+    margin-top: 5rem;
+}
+
+.firstsection .leftsection .logo a i{
+    margin: 1.2rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.firstsection .leftsection .logo a i:hover{
+    font-size: 3rem;
+    /* box-shadow: 5px 5px 5px black; */
+    filter: drop-shadow(15px 15px 10px black);
+}
+
+.black {
+    color: blueviolet;
+}
+
+.rightsection img {
+    width: 80%;
+}
+
+@media(max-width:900px){
+    .rightsection img {
+        width: 350px;
+        margin-top: 5rem;
+        margin-left: -5rem;
+    }
+}
+
+#element {
+    color: blueviolet;
+}
+
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content .description{
+    /* border: 2px solid yellow; */
+    height: 25rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.content .description h1{
+    font-family: cursive;
+}
+/* .content .description p{
+    font-size: 1.5rem;
+    font-family: cursive;
+    line-height: 3rem;
+} */
+
+#aboutme{
+    font-size: 1.5rem;
+    font-family: cursive;
+    line-height: 3rem;
+}
+
+.content .description p b{
+    font-weight: 700;
+    color: rgb(172, 164, 164);
+}
+
+.content .image img{
+    height: 30rem;
+    width: 15rem;
+    margin-top: 4rem;
+    transition: all ease-in-out 0.5s;
+    filter: drop-shadow(15px 15px 10px black);
+}
+
+.content .image img:hover{
+    height: 35rem;
+    width: 17.5rem;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .part1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+    flex-wrap: wrap;
+}
+
+.skills .part1 .javascript{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skills .part1 .js{
+    height: 10rem;
+    width: 18rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.skills .part1 a .js:hover{
+    height: 12rem;
+    width: 22rem;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.skills .part1 .cascading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .part1 .css{
+    height: 12rem;
+    width: 12rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.skills .part1 .css:hover{
+    height: 14rem;
+    width: 14rem;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.skills .part1 .hypertext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .part1 .html{
+    height: 11rem;
+    width: 11rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.skills .part1 .html:hover{
+    height: 13rem;
+    width: 13rem;
+    /* box-shadow: 10px 10px 60px black, -10px -10px 60px black; */
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+
+.part1 div p{
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+.skills .part2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8rem;
+    flex-wrap: wrap;
+}
+
+.skills .part2 .bootstrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .part2 .boot{
+    height: 13rem;
+    width: 13rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.skills .part2 .boot:hover{
+    height: 15rem;
+    width: 15rem;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.skills .part2 .tailwind{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .part2 .tailwind{
+    height: 13rem;
+    width: 13rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.skills .part2 .tailwind:hover{
+    height: 15rem;
+    width: 15rem;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.skills .part2 .github{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .part2 .git{
+    height: 11rem;
+    width: 11rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.skills .part2 .git:hover{
+    height: 13rem;
+    width: 13rem;
+    filter: drop-shadow(10px 10px 10px grey);
+}
+
+.part2 div p{
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+.projects .hospital{
+    display: flex;
+    justify-content:center ;
+}
+
+.projects .hospital video{
+    height: 45rem;
+    width: 45rem;
+}
+
+@media(max-width:790px){
+    .projects .hospital video{
+        height: 35rem;
+        width: 35rem;
+    }
+}
+
+@media(max-width:562px){
+    .projects .hospital video{
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+.projects #iphone{
+    display: flex;
+    justify-content:center ;
+}
+
+.projects #iphone video{
+    height: 45rem;
+    width: 45rem;
+}
+
+@media(max-width:790px){
+    .projects #iphone video{
+        height: 35rem;
+        width: 35rem;
+    }
+}
+
+@media(max-width:562px){
+    .projects #iphone video{
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+.pair1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .pair1 video{
+    height: 45rem;
+    width: 45rem;
+}
+
+@media(max-width:790px){
+    .projects .pair1 video{
+        height: 35rem;
+        width: 35rem;
+    }
+}
+
+@media(max-width:562px){
+    .projects .pair1 video{
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+.pair2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .pair2 video{
+    height: 45rem;
+    width: 45rem;
+}
+
+@media(max-width:790px){
+    .projects .pair2 video{
+        height: 35rem;
+        width: 35rem;
+    }
+}
+
+@media(max-width:562px){
+    .projects .pair2 video{
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+.pair3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .pair3 video{
+    height: 45rem;
+    width: 45rem;
+}
+
+@media(max-width:790px){
+    .projects .pair3 video{
+        height: 35rem;
+        width: 35rem;
+    }
+}
+
+@media(max-width:562px){
+    .projects .pair3 video{
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.contact h1{
+    font-size: 5rem;
+    color: black;
+}
+
+@media(max-width:562px){
+    .contact h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+}
+
+.contact .email-num .email{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.contact .email-num .email i{
+    font-size: 1.5rem;
+    color: #fff;
+    /* color: black; */
+}
+.contact .email-num .email p{
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    /* color: rgb(24, 24, 24); */
+    font-weight: 700;
+    color: #fff;
+}
+
+.contact .logo{
+    display: flex;
+    justify-content: space-around;
+    margin-top:  5rem; 
+}
+
+.contact .logo a i{
+    font-size: 2.5rem;
+    margin: 1.5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.contact .logo a i:hover{
+    font-size: 3rem;
+    filter: drop-shadow(10px 10px 10px black);
+}
