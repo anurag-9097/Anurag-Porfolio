@@ -293,6 +293,7 @@ nav .icon .fa-xmark{
 }
 
 
+
 .part1 div p{
     font-weight: 700;
     font-size: 1.5rem;
@@ -358,6 +359,18 @@ nav .icon .fa-xmark{
 }
 
 .skills .part2 .git:hover{
+    height: 13rem;
+    width: 13rem;
+    filter: drop-shadow(10px 10px 10px grey);
+}
+
+.skills .part2 .node-js{
+    height: 13rem;
+    width: 20rem;
+    transition: all ease-in-out 0.5s;
+}
+
+.skills .part2 .node-js:hover{
     height: 13rem;
     width: 13rem;
     filter: drop-shadow(10px 10px 10px grey);
@@ -545,4 +558,42 @@ nav .icon .fa-xmark{
 .contact .logo a i:hover{
     font-size: 3rem;
     filter: drop-shadow(10px 10px 10px black);
+}
+
+.outer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.outer .form form input{
+    width: 400px;
+    border-radius: 7px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid black;
+    margin-block: 10px;
+    color: white;
+}
+
+.outer .form form button{
+    border-radius: 5px;
+    background: white;
+    padding-inline: 10px;
+    padding-block: 5px;
+    color: grey;
+}
+
+@media(max-width:925px){
+    .outer .form form{
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:420px){
+    .outer .form form input{
+        width: 200px;
+        height: 40px;
+    }
 }
